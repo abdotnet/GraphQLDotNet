@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "Cak9TVjrqdxOu/y+FgQbZhD8c/LWuTC2pIeBnHGYuo3V+IlCvP17Q91Q2ANxaFyL98+OBzqIHD5zrUwcVAwaQw==",
+  "success": true,
+  "projectFilePath": "C:\\Apps\\GraphqlDotNet\\GraphqlDotNetApp\\GraphqlDotNetApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Abuba\\.nuget\\packages\\graphiql\\2.0.0\\graphiql.2.0.0.nupkg.sha512",
+    "C:\\Users\\Abuba\\.nuget\\packages\\graphql\\3.2.0\\graphql.3.2.0.nupkg.sha512",
+    "C:\\Users\\Abuba\\.nuget\\packages\\graphql-parser\\5.3.3\\graphql-parser.5.3.3.nupkg.sha512",
+    "C:\\Users\\Abuba\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Abuba\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.1\\microsoft.extensions.fileproviders.abstractions.3.1.1.nupkg.sha512",
+    "C:\\Users\\Abuba\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\3.1.1\\microsoft.extensions.fileproviders.embedded.3.1.1.nupkg.sha512",
+    "C:\\Users\\Abuba\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.1\\microsoft.extensions.primitives.3.1.1.nupkg.sha512",
+    "C:\\Users\\Abuba\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "C:\\Users\\Abuba\\.nuget\\packages\\system.reactive\\4.4.1\\system.reactive.4.4.1.nupkg.sha512",
+    "C:\\Users\\Abuba\\.nuget\\packages\\system.reactive.core\\4.4.1\\system.reactive.core.4.4.1.nupkg.sha512",
+    "C:\\Users\\Abuba\\.nuget\\packages\\system.reactive.linq\\4.4.1\\system.reactive.linq.4.4.1.nupkg.sha512",
+    "C:\\Users\\Abuba\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}
