@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using GraphiQl;
+using GraphQL;
+using GraphQL.Http;
+using GraphQL.Types;
+using GraphqlDotNetApp.Model;
+using GraphqlDotNetApp.Queries;
+using GraphqlDotNetApp.Repository;
+using GraphqlDotNetApp.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -24,16 +31,16 @@ namespace GraphqlDotNetApp
         public void ConfigureServices(IServiceCollection services)
         {
 
-            //services.AddScoped<IDependencyResolver>(_ => new
-            //            FuncDependencyResolver(_.GetRequiredService));
-            //services.AddScoped<IDocumentExecuter, DocumentExecuter>();
-            //services.AddScoped<IDocumentWriter, DocumentWriter>();
-            //services.AddScoped<AuthorService>();
-            //services.AddScoped<AuthorRepository>();
-            //services.AddScoped<AuthorQuery>();
-            //services.AddScoped<AuthorType>();
-            //services.AddScoped<BlogPostType>();
-            //services.AddScoped<ISchema, GraphQLDemoSchema>();
+            services.AddScoped<IDependencyResolver>(_ => new
+                        FuncDependencyResolver(_.GetRequiredService));
+            services.AddScoped<IDocumentExecuter, DocumentExecuter>();
+            services.AddScoped<IDocumentWriter, DocumentWriter>();
+            services.AddScoped<AuthorService>();
+            services.AddScoped<AuthorRepository>();
+            services.AddScoped<AuthorQuery>();
+            services.AddScoped<AuthorType>();
+            services.AddScoped<BlogPostType>();
+            services.AddScoped<ISchema, GraphQLDemoSchema>();
             services.AddControllers();
         }
 
@@ -49,17 +56,19 @@ namespace GraphqlDotNetApp
                 app.UseExceptionHandler("/Error");
             }
 
-            app.UseStaticFiles();
-
-            app.UseRouting();
 
             app.UseGraphiQl("/graphql");
+
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+            app.UseRouting();
+
 
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapRazorPages();
+                endpoints.MapControllers();
             });
         }
     }
